@@ -1,0 +1,509 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Shaurya Mishra | Professional Portfolio</title>
+
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+            scroll-behavior: smooth;
+        }
+
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #f4f7fb;
+            color: #222;
+            line-height: 1.6;
+        }
+
+        header {
+            background-color: #101d36;
+            color: white;
+            padding: 25px 8%;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            flex-wrap: wrap;
+            gap: 15px;
+        }
+
+        header h2 {
+            color: #59d5ff;
+        }
+
+        nav a {
+            color: white;
+            text-decoration: none;
+            margin: 0 10px;
+            font-size: 14px;
+        }
+
+        nav a:hover {
+            color: #59d5ff;
+        }
+
+        .hero {
+            background: linear-gradient(120deg, #101d36, #174d76);
+            color: white;
+            padding: 65px 8%;
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+            gap: 35px;
+            flex-wrap: wrap;
+        }
+
+        .hero-content {
+            flex: 1;
+            min-width: 260px;
+        }
+
+        .hero h1 {
+            font-size: 42px;
+            margin-bottom: 10px;
+        }
+
+        .hero h3 {
+            color: #59d5ff;
+            margin-bottom: 15px;
+        }
+
+        .hero p {
+            margin-bottom: 20px;
+            max-width: 600px;
+        }
+
+        .profile-img {
+            width: 210px;
+            height: 210px;
+            object-fit: cover;
+            border-radius: 50%;
+            border: 5px solid #59d5ff;
+        }
+
+        .btn {
+            display: inline-block;
+            background-color: #59d5ff;
+            color: #101d36;
+            padding: 10px 20px;
+            border-radius: 5px;
+            text-decoration: none;
+            font-weight: bold;
+        }
+
+        section {
+            padding: 45px 8%;
+        }
+
+        .section-title {
+            text-align: center;
+            color: #123b60;
+            margin-bottom: 25px;
+            font-size: 28px;
+        }
+
+        .about-box, .project-card, .contact-box {
+            background-color: white;
+            padding: 25px;
+            border-radius: 10px;
+            box-shadow: 0 3px 12px #00000010;
+        }
+
+        .education-table {
+            width: 100%;
+            border-collapse: collapse;
+            background-color: white;
+            box-shadow: 0 3px 12px #00000010;
+        }
+
+        .education-table th,
+        .education-table td {
+            border: 1px solid #d8e0e9;
+            padding: 14px;
+            text-align: left;
+        }
+
+        .education-table th {
+            background-color: #123b60;
+            color: white;
+        }
+
+        .education-table tr:nth-child(even) {
+            background-color: #edf5fb;
+        }
+
+        .marksheet-link {
+            color: #075ca8;
+            font-weight: bold;
+            text-decoration: none;
+        }
+
+        .marksheet-link:hover {
+            text-decoration: underline;
+        }
+
+        .skills-container {
+            display: flex;
+            justify-content: center;
+            flex-wrap: wrap;
+            gap: 15px;
+        }
+
+        .skill {
+            background-color: #123b60;
+            color: white;
+            padding: 12px 22px;
+            border-radius: 25px;
+        }
+
+        .interest-list {
+            display: flex;
+            justify-content: center;
+            flex-wrap: wrap;
+            gap: 20px;
+        }
+
+        .interest {
+            background-color: white;
+            padding: 20px;
+            width: 220px;
+            text-align: center;
+            border-radius: 10px;
+            box-shadow: 0 3px 12px #00000010;
+        }
+
+        .project-card {
+            max-width: 650px;
+            margin: auto;
+            border-left: 5px solid #59d5ff;
+        }
+
+        .project-card h3 {
+            color: #123b60;
+            margin-bottom: 10px;
+        }
+
+        .contact-box {
+            max-width: 650px;
+            margin: auto;
+            text-align: center;
+        }
+
+        .contact-box p {
+            margin: 10px 0;
+        }
+
+        footer {
+            background-color: #101d36;
+            color: white;
+            text-align: center;
+            padding: 20px;
+        }
+
+        @media (max-width: 600px) {
+            header {
+                justify-content: center;
+                text-align: center;
+            }
+
+            nav a {
+                display: inline-block;
+                margin: 5px;
+            }
+
+            .hero {
+                text-align: center;
+                justify-content: center;
+            }
+
+            .hero h1 {
+                font-size: 32px;
+            }
+
+            .profile-img {
+                width: 170px;
+                height: 170px;
+            }
+
+            section {
+                padding: 35px 5%;
+            }
+
+            .education-table th,
+            .education-table td {
+                padding: 8px;
+                font-size: 12px;
+            }
+        }
+    </style>
+</head>
+
+<body>
+
+    
+    <header>
+        
+
+         <h3>WELCOME TO MY PORTFOLIO</h3>
+
+    </header>
+
+    
+    <section class="hero" id="home">
+
+        <div class="hero-content">
+           
+            <h1>Hi, I'm Shaurya Mishra</h1>
+
+            <h3>B.Tech CSE | Artificial Intelligence & Machine Learning</h3>
+
+            <p>
+                I am a second-year B.Tech student at Shri Ramswaroop
+                Memorial University (SRMU), interested in programming,
+                artificial intelligence, machine learning, and technology.
+                I am continuously learning new skills and developing
+                my technical knowledge.
+            </p>
+
+            <a href="#about" class="btn">Explore My Portfolio</a>
+        </div>
+
+        <div>
+            <img src="my_images.jpeg"
+                 alt="Shaurya Mishra Profile Photo"
+                 class="profile-img">
+        </div>
+
+    </section>
+
+    
+    <section id="about">
+
+        <h2 class="section-title">About Me</h2>
+
+        <div class="about-box">
+            <p>
+                My name is <strong>Shaurya Mishra</strong>. I am pursuing
+                a Bachelor of Technology in Computer Science and Engineering
+                with a specialization in Artificial Intelligence and
+                Machine Learning at SRMU.
+            </p>
+
+            <br>
+
+            <p>
+                I am interested in learning programming languages,
+                exploring AI and ML technologies, and building practical
+                projects. My goal is to strengthen my technical skills
+                and prepare for future opportunities in the IT industry.
+            </p>
+        </div>
+
+    </section>
+
+    
+    <section id="education">
+
+        <h2 class="section-title">Educational Qualifications</h2>
+
+        <table class="education-table">
+
+            <thead>
+                <tr>
+                    <th>Qualification</th>
+                    <th>Board / University</th>
+                    <th>Percentage</th>
+                    <th>Marksheet</th>
+                </tr>
+            </thead>
+
+            <tbody>
+                <tr>
+                    <td>Class 10th</td>
+                    <td>UP Board</td>
+                    <td>74%</td>
+                    <td>
+                        <a href="10th_marksheet.jpeg"
+                           target="_blank"
+                           class="marksheet-link">
+                           View Marksheet
+                        </a>
+                    </td>
+                </tr>
+
+                <tr>
+                    <td>Class 12th</td>
+                    <td>UP Board</td>
+                    <td>70%</td>
+                    <td>
+                        <a href="12th_marksheet.jpeg"
+                           target="_blank"
+                           class="marksheet-link">
+                           View Marksheet
+                        </a>
+                    </td>
+                </tr>
+
+                <tr>
+                    <td>B.Tech CSE (AI & ML)</td>
+                    <td>SRMU</td>
+                    <td>Currently Pursuing</td>
+                    <td>2nd Year</td>
+                </tr>
+            </tbody>
+
+        </table>
+
+    </section>
+
+    
+    <section id="skills">
+
+        <h2 class="section-title">My Technical Skills</h2>
+
+        <div class="skills-container">
+            <div class="skill">HTML</div>
+            <div class="skill">C Programming</div>
+            <div class="skill">Python</div>
+            <div class="skill">Artificial Intelligence</div>
+            <div class="skill">Machine Learning</div>
+            <div class="skill">Problem Solving</div>
+        </div>
+
+        <p style="text-align:center; margin-top:20px;">
+            These are my learning areas. I am continuously improving
+            my knowledge through practice and projects.
+        </p>
+
+    </section>
+
+    
+    <section id="interests">
+
+        <h2 class="section-title">My Interests</h2>
+
+        <div class="interest-list">
+
+            <div class="interest">
+                <h3>AI & ML</h3>
+                <p>Exploring intelligent systems and machine learning.</p>
+            </div>
+
+            <div class="interest">
+                <h3>Web Development</h3>
+                <p>Creating useful and user-friendly websites.</p>
+            </div>
+
+            <div class="interest">
+                <h3>Programming</h3>
+                <p>Learning code and solving technical problems.</p>
+            </div>
+
+        </div>
+
+    </section>
+
+    <!-- Projects Section -->
+    <section id="projects">
+
+        <h2 class="section-title">My Projects</h2>
+
+        <div class="project-card">
+
+            <h3>Personal Portfolio Website</h3>
+
+            <p>
+                A personal portfolio website developed using HTML and
+                CSS to showcase my introduction, educational qualifications,
+                technical skills, interests, and contact information.
+            </p>
+
+            <br>
+
+            <p><strong>Technologies:</strong> HTML, CSS</p>
+
+            <p><strong>Project Type:</strong> Academic Mini Project</p>
+
+            <p><strong>Status:</strong> In Development</p>
+
+        </div>
+
+    </section>
+
+    <!-- Certificates and Documents -->
+    <section id="documents">
+
+        <h2 class="section-title">Academic Documents</h2>
+
+        <div class="about-box">
+
+            <p>
+                <strong>Class 10 Marksheet:</strong>
+                <a href="10th_marksheet.jpeg"
+                   target="_blank"
+                   class="marksheet-link">Open Document</a>
+            </p>
+
+            <br>
+
+            <p>
+                <strong>Class 12 Marksheet:</strong>
+                <a href="12th_marksheet.jpeg"
+                   target="_blank"
+                   class="marksheet-link">Open Document</a>
+            </p>
+
+            <br>
+
+           
+
+        </div>
+
+    </section>
+
+    <!-- Contact Section -->
+    <section id="contact">
+
+        <h2 class="section-title">Contact Me</h2>
+
+        <div class="contact-box">
+
+            <h3>Let's Connect!</h3>
+
+            <p><strong>Name:</strong> Shaurya Mishra</p>
+
+            <p><strong>Course:</strong> B.Tech CSE (AI & ML)</p>
+
+            <p><strong>University:</strong> SRMU</p>
+
+            <p>
+                <strong>Email:</strong>
+                shauryamishra12112008@gmail.com
+            </p>
+
+            <p>
+                <strong>GitHub:</strong>
+                <a href="https://github.com/shauryamishra12112008.git" target="_blank" class="github-link">View Profile</a>
+            </p>
+
+        </div>
+
+    </section>
+
+    <!-- Footer -->
+    <footer>
+        <p>
+            &copy; 2026 Shaurya Mishra |
+            Personal Portfolio Mini Project
+        </p>
+
+        <p>Designed using HTML and CSS</p>
+    </footer>
+
+</body>
+</html>
